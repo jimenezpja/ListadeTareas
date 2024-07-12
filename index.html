@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"  rel="stylesheet" />
+  <title>Lista de Tareas</title>
+</head>
+<body class="bg-zinc-900">
+  <h3 class="text-3xl font-bold dark:text-zinc-200 flex flex-row justify-center items-center m-4 p-4">Lista de Tareas</h3>
+  <form>
+    <div class="relative px-10 flex justify-center h-10">
+        <input type="text" id="texto" class="block w-6/12	p-4 ps-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escriba su nueva tarea aquí" required />
+        <button type="submit" id="addbtn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Agregar</button>
+    </div>
+    <div class="dark:text-zinc-500m-4 p-4">
+      <ul id="ul">
+
+      </ul>
+    </div>
+    <div id="msj-default" class="dark:text-zinc-500 flex flex-row justify-center items-center m-4 p-4">
+      <span class="text-xl font-bold dark:text-zinc-500 flex flex-row justify-center items-center m-4 p-4">No tienes tareas pendientes.</span>
+    </div>
+  </form>
+</body>
+<script src="./todolist.js"></script>
+</html>
