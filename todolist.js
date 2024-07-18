@@ -39,7 +39,13 @@ console.log('1');
     input.value = "";
     document.getElementById('msj-default').classList.add('hidden');
   }
-
+  checkbox.addEventListener( 'change', function() {
+    if(this.checked) {
+      span.classList.add('line-through');
+    } else {
+      span.classList.remove('line-through');
+    }
+  });
 
 });
 
